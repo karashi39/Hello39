@@ -1,5 +1,9 @@
 # pyspark_mac
 
+## Requirement
+
+- JDK
+
 ## Usage
 
 ```
@@ -69,3 +73,11 @@ almost same process but added convert processdata frame into list type once.
 
 the script will end in 12s.
 this is one-fifth of non-converted cross join.
+
+#### appendix
+
+use time_disp_py.sh to display exec time of python script as below.
+
+```
+$ sh ../benri/time_disp_py.sh cross_join.py data/beatles.csv
+```

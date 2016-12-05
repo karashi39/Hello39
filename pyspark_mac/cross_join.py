@@ -30,4 +30,7 @@ def main(argv):
     df_cross.show()
 
 if __name__ == '__main__':
+    if len(sys.argv) <= 1:
+        print 'should be 1 or more argument.'
+        exit()
     main(sys.argv)
