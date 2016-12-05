@@ -145,4 +145,7 @@ it is based on pivot.py
 $ python bad.py data/beatles.csv
 ```
 
-after execute python script, spark will process and exit with Attribute Error.
+after execute python script, spark will process and exit with Attribute Error.  
+like below.
+
+![exec bad.py](https://github.com/karashi39/Hello39/blob/image/images/bad.py.gif)
