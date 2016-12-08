@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- encoding:utf-8 -*-
-"""create vector from DataFrame on pyspark."""
+"""create vector DataFrame from coordinate DataFrame on pyspark."""
 
 from pyspark.sql import SparkSession
 
@@ -12,7 +12,7 @@ from pyspark.sql.types import StructType
 
 def main():
     """main function."""
-    spark = SparkSession.builder.appName('CreateVector').getOrCreate()
+    spark = SparkSession.builder.appName('CreateVectorByPivot').getOrCreate()
     spark.conf.set('spark.sql.crossJoin.enabled', True)
 
     # define coordinate table
