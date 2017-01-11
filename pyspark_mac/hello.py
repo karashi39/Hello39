@@ -17,6 +17,7 @@ def main():
     hello = [['world']]
     df = spark.createDataFrame(hello, schema=hw_schema)
     df.show()
+    spark.stop()
 
 if __name__ == '__main__':
     main()
