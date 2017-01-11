@@ -1,10 +1,6 @@
 #!/usr/bin/env python
 # -*- encoding:utf-8 -*-
-"""
-Can SparkSessions that have same appNamecan be defined?
-"""
-
-import time
+"""this code shows how SparkSession work if some valiable links same session."""
 
 from pyspark.sql import SparkSession
 
@@ -15,11 +11,11 @@ def main():
     spark2 = SparkSession.builder.appName('SameName').getOrCreate()
 
     # create two sesseion that have same name.
-    d_1= [[1]]
+    d_1 = [[1]]
     df_1 = spark1.createDataFrame(d_1)
     df_1.show()
 
-    d_2= [[2]]
+    d_2 = [[2]]
     df_2 = spark2.createDataFrame(d_2)
     df_2.show()
 
@@ -28,7 +24,7 @@ def main():
 
     # create another same name session after some process.
     spark3 = SparkSession.builder.appName('SameName').getOrCreate()
-    d_3= [[3]]
+    d_3 = [[3]]
     df_3 = spark3.createDataFrame(d_3)
     df_3.show()
 

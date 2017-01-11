@@ -6,7 +6,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.types import StringType
 from pyspark.sql.types import StructField
 from pyspark.sql.types import StructType
-from pyspark.sql.functions import *
+
 
 def main():
     """main function."""

@@ -48,7 +48,7 @@ def main():
     df_vector = df_coordinate.groupBy('x').pivot('y').agg(first('value')).fillna(0)
     df_vector.orderBy('x').show()
 
-    # get schema of pivoted DataFrame 
+    # get schema of pivoted DataFrame
     vector_schema = df_vector.schema
     add_vector_data = [
         [3, 0, 0, 0],
