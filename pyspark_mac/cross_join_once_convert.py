@@ -30,6 +30,7 @@ def main(argv):
     mst_part = spark.createDataFrame(mst_part)
     df_cross = mst_band.join(mst_part)
     df_cross.show()
+    spark.stop()
 
 if __name__ == '__main__':
     if len(sys.argv) <= 1:

@@ -6,7 +6,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.types import StringType
 from pyspark.sql.types import StructField
 from pyspark.sql.types import StructType
-
+from pyspark.sql.functions import *
 
 def main():
     """main function."""
@@ -17,6 +17,7 @@ def main():
     hello = [['world']]
     df = spark.createDataFrame(hello, schema=hw_schema)
     df.show()
+    spark.stop()
 
 if __name__ == '__main__':
     main()

@@ -26,6 +26,7 @@ def main(argv):
         df_all = df_all.union(df)
     df_pivot = df_all.groupBy(['band']).pivot('part')
     df_pivot.show()
+    spark.stop()
 
 if __name__ == '__main__':
     if len(sys.argv) <= 1:
