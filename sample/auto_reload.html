@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+    <title>Auto Reload Sample - Hello39</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+    <script src="js/auto_reload.js"></script>
+</HEAD>
+<BODY>
+    <!-- this sample want to show this division. -->
+    <div>
+        <p>
+            <button class="pure-button pure-button-primary" onclick="location.reload()">Manual Reload</button>
+            <button id="set_auto_reload" class="pure-button pure-button-active" onclick="set_auto_reload()">Set Auto Reload</button>
+            <button id="stop_auto_reload" class="pure-button pure-button-disabled" onclick="stop_auto_reload()">Stop Auto Reload</button>
+        </p>
+    </div>
+
+    <!-- load timestamp for demonstration. -->
+    <div>
+        Last Reload Time : 
+        <script language="javascript" type="text/javascript">
+        <!--
+            var Nowymdhms　=　new Date();
+            var NowHour = Nowymdhms.getHours();
+            var NowMin = Nowymdhms.getMinutes();
+            var NowSec = Nowymdhms.getSeconds();
+            if(NowHour < 10){
+                NowHour = "0" + NowHour;
+            }
+            if(NowMin < 10){
+            NowMin = "0" + NowMin;
+            }
+            document.write(NowHour + ":" + NowMin + ":" + NowSec);
+        -->
+        </script>
+    </div>
+</BODY>
+</HTML>
